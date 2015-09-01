@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<prerequisites>
+		<maven>3.2.1</maven>
+	</prerequisites>
+	
+	<parent> 
+		<groupId>com.expanset.hk2</groupId>
+		<artifactId>hk2</artifactId>
+		<version>1.0.2-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	
+	<artifactId>hk2-persistence-ormlite</artifactId>
+		
+	<packaging>jar</packaging>
+	
+	<name>HK2 Ormlite persistence</name>
+	<description>HK2 bindings for entity persistence based on Ormlite</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.expanset.hk2</groupId>
+			<artifactId>hk2-persistence</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.j256.ormlite</groupId>
+			<artifactId>ormlite-core</artifactId>
+		</dependency>	
+		<dependency>
+			<groupId>com.j256.ormlite</groupId>
+			<artifactId>ormlite-jdbc</artifactId>
+		</dependency>		
+	</dependencies>
+
+</project>

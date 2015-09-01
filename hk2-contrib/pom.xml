@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<prerequisites>
+		<maven>3.2.1</maven>
+	</prerequisites>
+	
+	<parent> 
+		<groupId>com.expanset.hk2</groupId>
+		<artifactId>hk2</artifactId>
+		<version>1.0.2-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	
+	<artifactId>hk2-contrib</artifactId>
+		
+	<packaging>jar</packaging>
+
+	<name>HK2 contribution library</name>
+	<description>Bindings for configuring, internationalizing etc</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.expanset.utils</groupId>
+			<artifactId>utils-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<scope>test</scope>
+		</dependency>		
+	</dependencies>
+
+</project>
